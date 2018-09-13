@@ -24,10 +24,10 @@
     </div>
   </header>
   <div class="tab">
-    <div class="container">
-      <button class="tablinks" onclick="openTab(event, 'about')"  id="defaultOpen">About</button>
-      <button class="tablinks" onclick="openTab(event, 'photos')">photos</button>
-    </div>
+    <nav class="navigation container">
+      <a href="#" class="tablinks" onclick="openTab(event, 'about')"  id="defaultOpen">about</a>
+      <a href="#" class="tablinks" onclick="openTab(event, 'photos')">photos</a>
+    </nav>
   </div>
   <div class="tab-content">
     <div class="container">
@@ -131,7 +131,7 @@
           </div>
         </div>
       </article>
-      <div id="photos" class="tabcontent">
+      <article id="photos" class="tabcontent">
         <div class="container">
           <div class="filter-photos">
             <p>Show me:</p>
@@ -263,7 +263,7 @@
             </div>
           </div>
         </div> 
-      </div>
+      </article>
     </div>
   </div>
   <script src="js/tabs.js"></script>

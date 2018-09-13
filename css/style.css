@@ -80,7 +80,8 @@ header{
   overflow: hidden;
   border: 1px solid #ccc;
 }
-.tab button {
+.tab a {
+	display: inline-block;
   background-color: inherit;
   border-bottom: 2px solid #fff;
   border-top:none;
@@ -94,12 +95,13 @@ header{
   font-size: 36px;
   color: #002b41;
   font-family: BebasNeueRegular;
+  text-decoration: none;
 }
-.tab button:hover {
+.tab a:hover {
 	background-color: #ddd;
 	border-bottom: 2px solid #ddd;
 }
-.tab button.active {
+.tab a.active {
   background-color: #ccc;
   border-bottom: 2px solid #5fc0e7;
 }
@@ -295,7 +297,6 @@ img.demo {
 .active,
 .demo:hover {
   opacity: 1;
-  background: red;
 }
 img.hover-shadow {
   transition: 0.3s;
