@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test-viseven</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="user-block">
+        <div class="user-info">
+          <img src="images/avatar.png" alt="avatar">
+        </div>
+        <div class="user-desc">
+          <h1>Andrew Sokolovsky</h1>
+          <ul>
+            <li><img src="images/work.png" alt="work">Manager</li>
+            <li><img src="images/mark.png" alt="mark">Lives in Kiev</li>
+            <li><img src="images/seting.png" alt="seting">66 have you in circles</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="tab">
+    <div class="container">
+      <button class="tablinks" onclick="openTab(event, 'about')"  id="defaultOpen">About</button>
+      <button class="tablinks" onclick="openTab(event, 'photos')">photos</button>
+    </div>
+  </div>
+  <div class="tab-content">
+    <div class="container">
+      <div id="about" class="tabcontent">
+        <div class="about-wrapper">
+          <div class="about-iteam">
+            <div class="about-desc">
+              <h1>People</h1>
+              <h2>In your circles</h2>
+              <p>You havent added anyone or you’re not displaying this.</p>
+              <h2>Have you in circles <span><a href="#">View all (66)</a></span></h2>
+              <div class="about-user">
+                <div class="user-img">
+                  <a href="#"><img src="images/user5.png" alt="user"></a>
+                </div>
+                <div class="user-img">
+                  <a href="#"><img src="images/user3.png" alt="user"></a>
+                </div>
+                <div class="user-img">
+                  <a href="#"><img src="images/user4.png" alt="user"></a>
+                </div>
+                <div class="user-img">
+                  <a href="#"><img src="images/user2.png" alt="user"></a>
+                </div>
+                <div class="user-img">
+                  <a href="#"><img src="images/user6.png" alt="user"></a>
+                </div>
+                <div class="user-img">
+                  <a href="#"><img src="images/user2.png" alt="user"></a>
+                </div>
+                <div class="user-img">
+                  <a href="#"><img src="images/user1.png" alt="user"></a>
+                </div>
+              </div>
+              <div class="edit">
+                <a href="#"><img src="images/edit.png" alt="user">Edit</a>
+              </div>
+            </div>  
+          </div>
+          <div class="about-iteam top-purple">
+            <div class="about-desc">
+              <h1>Work</h1>
+              <h2>Occupation</h2>
+              <p>Online projects</h2>
+              <h2>Introduction</h2>
+              <p>Put a little bit about yourself here so people know they’ve found the corrent Adi.</p>
+              <h2>Bragging rights</h2>
+              <p>Examples: Survived secondary school, have 3 kids, etc.</p>  
+              <div class="edit">
+                <a href="#"><img src="images/edit.png" alt="edit">Edit</a>
+              </div>
+            </div>  
+          </div>
+          <div class="about-iteam top-red">
+            <div class="about-desc">
+              <h1>Story</h1>
+              <h2>Tagline</h2>
+              <p>A brief description of you</p>
+              <h2>Introduction</h2>
+              <p>Put a little bit about yourself here so people know they’ve found the corrent Adi.</p>
+              <h2>Bragging rights</h2>
+              <p>Examples: Survived secondary school, have 3 kids, etc.</p>
+              <div class="edit">
+                <a href="#"><img src="images/edit.png" alt="edit">Edit</a>
+              </div>
+            </div>  
+          </div>
+          <div class="about-iteam top-orange">
+            <div class="about-desc">
+              <h1>Edocation</h1>
+              <h2>In your circles</h2>
+              <p>You havent added anyone or you’re not displaying this.</p>
+              <h2>Have you in circles <span><a href="#">View all (66)</a></span></h2>
+              <div class="about-user">
+                <div class="user-img">
+                  <a href="#"><img src="images/user5.png" alt="user"></a>
+                </div>
+                <div class="user-img">
+                  <a href="#"><img src="images/user3.png" alt="user"></a>
+                </div>
+                <div class="user-img">
+                  <a href="#"><img src="images/user4.png" alt="user"></a>
+                </div>
+                <div class="user-img">
+                  <a href="#"><img src="images/user2.png" alt="user"></a>
+                </div>
+                <div class="user-img">
+                  <a href="#"><img src="images/user6.png" alt="user"></a>
+                </div>
+                <div class="user-img">
+                  <a href="#"><img src="images/user2.png" alt="user"></a>
+                </div>
+                <div class="user-img">
+                  <a href="#"><img src="images/user1.png" alt="user"></a>
+                </div>
+              </div>
+              <div class="edit">
+                <a href="#"><img src="images/edit.png" alt="edit">Edit</a>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+      <div id="photos" class="tabcontent">
+        <div class="container">
+          <div class="filter-photos">
+            <p>Show me:</p>
+            <nav class="filte-items">
+              <a href="#" class="active-items">All</a>
+              <a href="#">Architecture</a>
+              <a href="#">Images</a>
+              <a href="#">Nature</a>
+              <a href="#">Photography</a>
+              <a href="#">Videos</a>
+            </nav>
+          </div>
+          <div class="gallery">
+            <div class="gallery-wrapper">
+                <img src="images/small-img1.png" class="hover-shadow image" alt="small-img">
+              <div class="middle-hover">
+                <div class="text" onclick="openModal();currentSlide(1)" ><img src="images/Forma_1.png"></div>
+              </div>
+            </div>
+            <div class="gallery-wrapper">
+                <img src="images/small-img2.png" class="hover-shadow image-gallery" alt="small-img">
+              <div class="middle-hover">
+                <div class="text" onclick="openModal();currentSlide(2)" ><img src="images/Forma_1.png"></div>
+              </div>
+            </div>
+            <div class="gallery-wrapper">
+                <img src="images/small-img3.png" class="hover-shadow image-gallery" alt="small-img">
+              <div class="middle-hover">
+                <div class="text" onclick="openModal();currentSlide(3)" ><img src="images/Forma_1.png"></div>
+              </div>
+            </div>
+            <div class="gallery-wrapper">
+                <img src="images/small-img4.png" class="hover-shadow image-gallery" alt="small-img">
+              <div class="middle-hover">
+                <div class="text" onclick="openModal();currentSlide(4)" ><img src="images/Forma_1.png"></div>
+              </div>
+            </div>
+            <div class="gallery-wrapper">
+                <img src="images/small-img5.png" class="hover-shadow image-gallery" alt="small-img">
+              <div class="middle-hover">
+                <div class="text" onclick="openModal();currentSlide(5)" ><img src="images/Forma_1.png"></div>
+              </div>
+            </div>
+            <div class="gallery-wrapper">
+                <img src="images/small-img6.png" class="hover-shadow image-gallery" alt="small-img">
+              <div class="middle-hover">
+                <div class="text" onclick="openModal();currentSlide(6)" ><img src="images/Forma_1.png"></div>
+              </div>
+            </div>
+            <div class="gallery-wrapper">
+                <img src="images/small-img7.png" class="hover-shadow image-gallery" alt="small-img">
+              <div class="middle-hover">
+                <div class="text" onclick="openModal();currentSlide(7)" ><img src="images/Forma_1.png"></div>
+              </div>
+            </div>
+            <div class="gallery-wrapper">
+                <img src="images/small-img8.png" class="hover-shadow image-gallery" alt="small-img">
+              <div class="middle-hover">
+                <div class="text" onclick="openModal();currentSlide(8)" ><img src="images/Forma_1.png"></div>
+              </div>
+            </div>
+            <div class="gallery-wrapper">
+                <img src="images/small-img9.png" class="hover-shadow image-gallery" alt="small-img">
+              <div class="middle-hover">
+                <div class="text" onclick="openModal();currentSlide(9)" ><img src="images/Forma_1.png"></div>
+              </div>
+            </div>
+            <div class="gallery-wrapper">
+                <img src="images/small-img10.png" class="hover-shadow image-gallery" alt="small-img">
+              <div class="middle-hover">
+                <div class="text" onclick="openModal();currentSlide(10)" ><img src="images/Forma_1.png"></div>
+              </div>
+            </div>
+            <div class="gallery-wrapper">
+                <img src="images/small-img11.png" class="hover-shadow image-gallery" alt="small-img">
+              <div class="middle-hover">
+                <div class="text" onclick="openModal();currentSlide(11)" ><img src="images/Forma_1.png"></div>
+              </div>
+            </div>
+            <div class="gallery-wrapper">
+                <img src="images/small-img12.png" class="hover-shadow image-gallery" alt="small-img">
+              <div class="middle-hover">
+                <div class="text" onclick="openModal();currentSlide(12)" ><img src="images/Forma_1.png"></div>
+              </div>
+            </div>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="mySlides">
+                  <img src="images/big-img1.png" alt="big-img">
+                </div>
+                <div class="mySlides">
+                  <img src="images/big-img2.png" alt="big-img">
+                </div>
+                <div class="mySlides">
+                  <img src="images/big-img3.png" alt="big-img">
+                </div>
+                <div class="mySlides">
+                  <img src="images/big-img4.png" alt="big-img">
+                </div>
+                <div class="mySlides">
+                  <img src="images/big-img5.png" alt="big-img">
+                </div>
+                <div class="mySlides">
+                  <img src="images/big-img6.png" alt="big-img">
+                </div>
+                <div class="mySlides">
+                  <img src="images/big-img7.png" alt="big-img">
+                </div>
+                <div class="mySlides">
+                  <img src="images/big-img8.png" alt="big-img">
+                </div>
+                <div class="mySlides">
+                  <img src="images/big-img9.png" alt="big-img">
+                </div>
+                <div class="mySlides">
+                  <img src="images/big-img10.png" alt="big-img">
+                </div>
+                <div class="mySlides">
+                  <img src="images/big-img11.png" alt="big-img">
+                </div>
+                <div class="mySlides">
+                  <img src="images/big-img12.png" alt="big-img">
+                </div>
+                <div class="mySlides">
+                  <img src="images/big-img12.png" alt="big-img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+  <script src="js/tabs.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
