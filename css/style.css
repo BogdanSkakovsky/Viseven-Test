@@ -56,10 +56,19 @@ header{
 .user-desc ul li:last-child:after{
 	display: none;
 }
-.user-desc ul li img{
+.work:before{
+	content: url(../images/work.png);
 	margin: 0 10px 0 0;
-	z-index: 10;
 }
+.city:before{
+	content: url(../images/mark.png);
+	margin: 0 10px 0 0;
+}
+.seting:before{
+	content: url(../images/seting.png);
+	margin: 0 10px 0 0;
+}
+
 .tabs-navigation{
 	border-bottom: 2px solid #f1f1f3;
 	text-transform: uppercase;
