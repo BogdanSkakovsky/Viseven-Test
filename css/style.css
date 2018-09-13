@@ -28,7 +28,7 @@ header{
 	border-radius: 50px;
 	position: absolute;
 	padding: 7px 50px 15px 80px;
-	margin: 0px 0px 0 150px;
+	left: 150px;
 }
 .user-desc h1{
 	font-family: Raleway-Bold;
@@ -193,7 +193,8 @@ header{
 	text-decoration: none;
 	font-family: Raleway-Light; 
 }
-.edit a img{
+.edit a:before{
+	content: url(../images/edit.png);
 	margin: 0 5px 0 0;
 }
 .filter-photos{
